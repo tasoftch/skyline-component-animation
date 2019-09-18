@@ -1,0 +1,19 @@
+{
+  "name": "skyline/component-animation",
+  "description": "Includes the animation css framework by Daniel Eden",
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "version": "3.7.2",
+  "authors": [
+    {
+      "name": "Daniel Eden"
+    },
+    {
+      "name": "Thomas Abplanalp",
+      "email": "info@tasoft.ch"
+    }
+  ],
+  "require": {
+    "skyline/direct-components": "dev-master"
+  }
+}
