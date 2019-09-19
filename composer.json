@@ -15,5 +15,8 @@
   ],
   "require": {
     "skyline/direct-components": "dev-master"
+  },
+  "require-dev": {
+    "skyline/compiler": "dev-master"
   }
 }

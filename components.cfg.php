@@ -21,6 +21,7 @@
  * SOFTWARE.
  */
 
+use Skyline\Compiler\CompilerContext;
 use Skyline\Component\Config\CSSComponent;
 use TASoft\Util\PathTool;
 
@@ -34,14 +35,14 @@ return [
             'all',
             'sha384-'.hash_file("sha384", $animationFile),
             NULL,
-            PathTool::relative(__FILE__, $animationFile)
+            CompilerContext::getCurrentCompiler()->getRelativeProjectPath($animationFile)
         ),
         'css2' => new CSSComponent(
             "/Public/css/skyline-animate-addon.css",
             'all',
             'sha384-'.hash_file("sha384", $animationAddon),
             NULL,
-            PathTool::relative(__FILE__, $animationAddon)
+            CompilerContext::getCurrentCompiler()->getRelativeProjectPath($animationAddon)
         ),
     ]
 ];
