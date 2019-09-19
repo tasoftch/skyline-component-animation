@@ -23,7 +23,6 @@
 
 use Skyline\Compiler\CompilerContext;
 use Skyline\Component\Config\CSSComponent;
-use TASoft\Util\PathTool;
 
 $animationFile = __DIR__ . "/Components/css/animate.min.css";
 $animationAddon = __DIR__ . "/Components/css/skyline-additions.css";
