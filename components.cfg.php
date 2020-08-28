@@ -32,7 +32,7 @@ return [
         'css1' => new CSSComponent(
             "/Public/css/animate.min.css",
             'all',
-            'sha384-'.base64_decode( hash_file("sha384", $animationFile, true)),
+            'sha384-'.base64_encode( hash_file("sha384", $animationFile, true)),
             NULL,
             CompilerContext::getCurrentCompiler()->getRelativeProjectPath($animationFile)
         ),
