@@ -32,14 +32,14 @@ return [
         'css1' => new CSSComponent(
             "/Public/css/animate.min.css",
             'all',
-            'sha384-'.base64_encode( hash_file("sha384", $animationFile, true)),
+            NULL,
             NULL,
             CompilerContext::getCurrentCompiler()->getRelativeProjectPath($animationFile)
         ),
         'css2' => new CSSComponent(
             "/Public/css/skyline-animate-addon.css",
             'all',
-            'sha384-'.base64_encode(hash_file("sha384", $animationAddon, true)),
+            NULL,
             NULL,
             CompilerContext::getCurrentCompiler()->getRelativeProjectPath($animationAddon)
         ),
